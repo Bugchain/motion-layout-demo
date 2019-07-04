@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="button_call_width_height">64dp</dimen>
+    <dimen name="dial_pad_height">500dp</dimen>
+    <dimen name="people_pad_width">100dp</dimen>
+    <dimen name="people_pad_height">200dp</dimen>
+    <dimen name="button_text_size">20sp</dimen>
+
+</resources>
