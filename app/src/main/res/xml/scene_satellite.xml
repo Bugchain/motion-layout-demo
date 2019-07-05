@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <!-- Star1 -->
+    <Transition
+            motion:constraintSetStart="@id/start"
+            motion:constraintSetEnd="@id/end"
+            motion:duration="20000"
+            motion:motionInterpolator="linear"
+            motion:autoTransition="animateToEnd">
+
+    </Transition>
+
+
+    <!-- Star -->
+    <ConstraintSet android:id="@+id/start">
+
+
+        <Constraint android:id="@id/star1">
+            <Layout android:layout_width="@dimen/shape_oval_x_small"
+                    android:layout_height="@dimen/shape_oval_x_small"
+                    motion:layout_constraintTop_toTopOf="parent"
+                    motion:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="@dimen/spacing_normal"/>
+        </Constraint>
+
+        <Constraint android:id="@id/star2">
+            <Layout android:layout_width="@dimen/shape_oval_small"
+                    android:layout_height="@dimen/shape_oval_small"
+                    motion:layout_constraintTop_toBottomOf="@id/star1"
+                    motion:layout_constraintStart_toStartOf="parent"
+                    motion:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/spacing_normal"/>
+
+        </Constraint>
+
+    </ConstraintSet>
+
+
+    <!-- End -->
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@id/star1">
+            <Layout android:layout_width="@dimen/shape_oval_x_small"
+                    android:layout_height="@dimen/shape_oval_x_small"
+                    motion:layout_constraintTop_toTopOf="parent"
+                    motion:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/spacing_normal"/>
+
+            <PropertySet android:alpha="0"/>
+
+        </Constraint>
+
+        <Constraint android:id="@id/star2">
+            <Layout android:layout_width="@dimen/shape_oval_small"
+                    android:layout_height="@dimen/shape_oval_small"
+                    motion:layout_constraintTop_toBottomOf="@id/star1"
+                    motion:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/spacing_normal"/>
+            <PropertySet android:alpha="0"/>
+
+
+        </Constraint>
+
+    </ConstraintSet>
+
+
+</MotionScene>

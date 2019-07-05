@@ -16,5 +16,7 @@
     <string name="symbol_star">*</string>
     <string name="del">Del</string>
     <string name="sharp_symbol">#</string>
+    <string name="multi_state">Multi  State</string>
+    <string name="key_frame">Key Frame</string>
 
 </resources>

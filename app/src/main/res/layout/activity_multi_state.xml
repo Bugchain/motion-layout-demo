@@ -198,19 +198,108 @@
             android:id="@+id/people_pad"
             android:layout_width="@dimen/people_pad_width"
             android:layout_height="@dimen/people_pad_height"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/bg_right_menu"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintTop_toBottomOf="parent"/>
 
 
+    <com.github.abdularis.civ.CircleImageView
+            android:id="@+id/avatar1"
+            android:layout_width="@dimen/profile_image_width_height"
+            android:layout_height="@dimen/profile_image_width_height"
+            android:src="@drawable/avatar_1_raster"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toStartOf="@id/people_pad"
+            app:layout_constraintTop_toTopOf="@id/people_pad"
+            app:layout_constraintEnd_toStartOf="@id/avatar2"
+            app:layout_constraintBottom_toTopOf="@id/avatar3"/>
 
 
+    <com.github.abdularis.civ.CircleImageView
+            android:id="@+id/avatar2"
+            android:layout_width="@dimen/profile_image_width_height"
+            android:layout_height="@dimen/profile_image_width_height"
+            android:src="@drawable/avatar_2_raster"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toEndOf="@id/avatar1"
+            app:layout_constraintTop_toTopOf="@id/people_pad"
+            app:layout_constraintEnd_toEndOf="@id/people_pad"
+            app:layout_constraintBottom_toTopOf="@id/avatar4"/>
+
+    <com.github.abdularis.civ.CircleImageView
+            android:id="@+id/avatar3"
+            android:layout_width="@dimen/profile_image_width_height"
+            android:layout_height="@dimen/profile_image_width_height"
+            android:src="@drawable/avatar_3_raster"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toStartOf="@id/people_pad"
+            app:layout_constraintTop_toBottomOf="@id/avatar1"
+            app:layout_constraintEnd_toStartOf="@id/avatar4"
+            app:layout_constraintBottom_toTopOf="@id/avatar5"/>
+
+    <com.github.abdularis.civ.CircleImageView
+            android:id="@+id/avatar4"
+            android:layout_width="@dimen/profile_image_width_height"
+            android:layout_height="@dimen/profile_image_width_height"
+            android:src="@drawable/avatar_4_raster"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toEndOf="@id/avatar3"
+            app:layout_constraintTop_toBottomOf="@id/avatar2"
+            app:layout_constraintEnd_toEndOf="@id/people_pad"
+            app:layout_constraintBottom_toTopOf="@id/avatar6"/>
 
 
+    <com.github.abdularis.civ.CircleImageView
+            android:id="@+id/avatar5"
+            android:layout_width="@dimen/profile_image_width_height"
+            android:layout_height="@dimen/profile_image_width_height"
+            android:src="@drawable/avatar_5_raster"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toStartOf="@id/people_pad"
+            app:layout_constraintTop_toBottomOf="@id/avatar3"
+            app:layout_constraintEnd_toStartOf="@id/avatar6"
+            app:layout_constraintBottom_toTopOf="@id/avatar7"/>
 
+    <com.github.abdularis.civ.CircleImageView
+            android:id="@+id/avatar6"
+            android:layout_width="@dimen/profile_image_width_height"
+            android:layout_height="@dimen/profile_image_width_height"
+            android:src="@drawable/avatar_6_raster"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toEndOf="@id/avatar5"
+            app:layout_constraintTop_toBottomOf="@id/avatar4"
+            app:layout_constraintEnd_toEndOf="@id/people_pad"
+            app:layout_constraintBottom_toTopOf="@id/avatar8"/>
 
+    <com.github.abdularis.civ.CircleImageView
+            android:id="@+id/avatar7"
+            android:layout_width="@dimen/profile_image_width_height"
+            android:layout_height="@dimen/profile_image_width_height"
+            android:src="@drawable/avatar_7_raster"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toStartOf="@id/people_pad"
+            app:layout_constraintTop_toBottomOf="@id/avatar5"
+            app:layout_constraintEnd_toStartOf="@id/avatar8"
+            app:layout_constraintBottom_toBottomOf="@id/people_pad"/>
 
-
+    <com.github.abdularis.civ.CircleImageView
+            android:id="@+id/avatar8"
+            android:layout_width="@dimen/profile_image_width_height"
+            android:layout_height="@dimen/profile_image_width_height"
+            android:src="@drawable/avatar_8_raster"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toEndOf="@id/avatar7"
+            app:layout_constraintTop_toBottomOf="@id/avatar6"
+            app:layout_constraintEnd_toEndOf="@id/people_pad"
+            app:layout_constraintBottom_toBottomOf="@id/people_pad"/>
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/motionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        app:layoutDescription="@xml/scene_satellite">
+
+    <ImageView
+            android:id="@+id/star1"
+            android:layout_width="@dimen/shape_oval_x_small"
+            android:layout_height="@dimen/shape_oval_x_small"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/shape_oval_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/spacing_normal"/>
+
+    <ImageView
+            android:id="@+id/star2"
+            android:layout_width="@dimen/shape_oval_small"
+            android:layout_height="@dimen/shape_oval_small"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/shape_oval_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/star1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/spacing_normal"/>
+
+    <ImageView
+            android:id="@+id/star3"
+            android:layout_width="@dimen/shape_oval_small"
+            android:layout_height="@dimen/shape_oval_small"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/shape_oval_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/star2"
+            android:layout_margin="@dimen/spacing_normal"/>
+
+    <ImageView
+            android:id="@+id/star4"
+            android:layout_width="@dimen/shape_oval_normal"
+            android:layout_height="@dimen/shape_oval_normal"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/shape_oval_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

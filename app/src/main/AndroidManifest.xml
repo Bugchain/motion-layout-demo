@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MultiStateActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".DemoActivity"
+                  android:screenOrientation="portrait"
+                    android:theme="@style/AppThemeFullScreen"/>
 
     </application>
 
